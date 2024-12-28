@@ -887,11 +887,13 @@ section,
 }
 
 .services .service-item:hover .icon {
-  background: var(--surface-color);
+  background: #BCBCBC;
 }
 
 .services .service-item:hover .icon i {
-  color: var(--accent-color);
+  color: white;
+  content: "\f0c1"; /* Unicode for the new icon */
+  font-family: "bootstrap-icons"; /* Bootstrap icons font */
 }
 
 .services .service-item .title {
@@ -902,6 +904,7 @@ section,
 
 .services .service-item .title a {
   color: var(--heading-color);
+
 }
 
 .services .service-item .title a:hover {

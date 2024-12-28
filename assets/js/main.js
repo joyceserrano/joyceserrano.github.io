@@ -194,6 +194,19 @@
     }
   });
 
+  document.querySelectorAll('.service-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const icon = item.querySelector('.icon i');
+      icon.classList.remove('bi-card-checklist');
+      icon.classList.add('bi-link-45deg');
+    });
+    item.addEventListener('mouseleave', () => {
+      const icon = item.querySelector('.icon i');
+      icon.classList.remove('bi-link-45deg');
+      icon.classList.add('bi-card-checklist');
+    });
+  });
+
   /**
    * Navmenu Scrollspy
    */
