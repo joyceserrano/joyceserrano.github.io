@@ -646,13 +646,19 @@ section,
 }
 
 .skills .progress .skill {
-  color: var(--heading-color);
+  /* color: var(--heading-color);
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font); */
+
+  display: flex;
+  font-weight: 600;
+      align-items: center;
+      height: 100%;
+      white-space: nowrap;
 }
 
 .skills .progress .skill .val {
@@ -661,8 +667,9 @@ section,
 }
 
 .skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+  /* background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px; */
+  display: none;
 }
 
 .skills .progress-bar {
